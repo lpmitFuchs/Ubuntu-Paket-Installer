@@ -42,7 +42,7 @@ flatpak install com.jgraph.drawio.desktop -y
 #apt install packettracer -y
 
 #Slimbook Battery
-dpkg -i ./debs/slimbookbattery_4.0.4_all.deb
+dpkg -i ./slimbookbattery_4.0.4_all.deb
 
 #Visual Studio Code
 flatpak install com.visualstudio.code -y
@@ -51,5 +51,5 @@ flatpak install com.visualstudio.code -y
 flatpak install com.google.Chrome -y
 
 #Teamviewer
-dpkg -i ./debs/teamviewer_15.59.3_amd64.deb
+#dpkg -i ./debs/teamviewer_15.59.3_amd64.deb
 apt --fix-broken install -y
