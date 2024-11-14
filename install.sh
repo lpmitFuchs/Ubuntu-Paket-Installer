@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 
+#APT
+apt update -y
+apt upgrade -y
+apt autoremove -y
 #Flatpak
-apt-get install flatpak
+apt-get install flatpak -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-apt-get install gnome-software-plugin-flatpak
+apt-get install gnome-software-plugin-flatpak -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 #Brave
@@ -20,7 +24,7 @@ apt install remmina -y
 apt install yubioath-desktop -y
 
 #Bitwarden
-flatpak install com.bitwarden.desktop -ycom.bitwarden.desktop
+flatpak install com.bitwarden.desktop -y
 
 #Flatseal
 flatpak install com.github.tchx84.Flatseal -y
@@ -29,22 +33,23 @@ flatpak install com.github.tchx84.Flatseal -y
 flatpak install com.discordapp.Discord -y
 
 #Steam
-apt install Steam -y
+flatpak install com.valvesoftware.Steam -y
 
 #Draw.io
 flatpak install com.jgraph.drawio.desktop -y
 
 #Packet Tracer
-apt install packettracer -y
+#apt install packettracer -y
 
 #Slimbook Battery
-apt install slimbookbattery -y
+dpkg -i ./debs/slimbookbattery_4.0.4_all.deb
 
 #Visual Studio Code
 flatpak install com.visualstudio.code -y
 
 #Chrome
-apt install google-chrome-stable -y
+flatpak install com.google.Chrome -y
 
 #Teamviewer
-apt install teamviewer
+dpkg -i ./debs/teamviewer_15.59.3_amd64.deb
+apt --fix-broken install -y
