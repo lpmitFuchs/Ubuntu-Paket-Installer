@@ -20,19 +20,19 @@ apt install remmina -y
 apt install yubioath-desktop -y
 
 #Bitwarden
-flatpak install Bitwarden -y
+flatpak install com.bitwarden.desktop -ycom.bitwarden.desktop
 
 #Flatseal
-flatpak install Flatseal -y
+flatpak install com.github.tchx84.Flatseal -y
 
 #Discord
-flatpak install Discord -y
+flatpak install com.discordapp.Discord -y
 
 #Steam
 apt install Steam -y
 
 #Draw.io
-flatpak install draw.io -y
+flatpak install com.jgraph.drawio.desktop -y
 
 #Packet Tracer
 apt install packettracer -y
@@ -41,7 +41,10 @@ apt install packettracer -y
 apt install slimbookbattery -y
 
 #Visual Studio Code
-flatpak install Visual Studio Code -y
+flatpak install com.visualstudio.code -y
 
 #Chrome
 apt install google-chrome-stable -y
+
+#Teamviewer
+apt install teamviewer
